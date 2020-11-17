@@ -1,15 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
-		<title>Linear by TEMPLATED</title>
+		<title>Consultório Santa Monica</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -21,18 +18,15 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
 	</head>
-	<body>
+	<body class="homepage">
 
 	<!-- Header -->
 		<div id="header">
 			<div id="nav-wrapper"> 
 				<!-- Nav -->
 				<nav id="nav">
-					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="Login.php">Login</a></li>
-						<li class="active"><a href="right-sidebar.php">Right Sidebar</a></li>
-						<li><a href="no-sidebar.php">No Sidebar</a></li>
+				<ul>
+						<li><a href="sair.php">Sair</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -40,40 +34,37 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<h1><a href="#">Linear</a></h1>
-					<span class="tag">By TEMPLATED</span>
+					<h1><a href="#">Consultório Médico</a></h1>
+					<span class="tag">Santa Monica</span>
 				</div>
 			</div>
 		</div>
-	<!-- Header --> 
+
+	<!-- Featured -->
+		<div id="featured">
+			<div class="container">
+				<header>
+					<h2>Calendário</h2>
+                    <br>
+                    <br>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=4n7jnipab27d2u0vg5k04gnn6k%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </header>
+            </div>
+        </div>
+					
 
 	<!-- Main -->
-		<div id="main">
-			<div class="container">
-				<div class="row">
-					<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/35d4d820-04a4-49bb-a2be-01c7d21ad197%22%3E"></iframe>
-				</div>
-			</div>
-		</div>
-	<!-- /Main -->
 
 	<!-- Tweet -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
-				</section>
-			</div>
-		</div>
-	<!-- /Tweet -->
+
 
 	<!-- Footer -->
 		<div id="footer">
 			<div class="container">
 				<section>
 					<header>
-						<h2>Get in touch</h2>
-						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+						<h2>Consultório Médico Santa monica</h2>
+						<span class="byline">Avenida Sarah Kubitschek, Número 55 , Cachoeira Paulista-SP</span>
 					</header>
 					<ul class="contact">
 						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
@@ -84,15 +75,8 @@
 				</section>
 			</div>
 		</div>
-	<!-- /Footer -->
 
-	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-			</div>
-		</div>
-
+	
 
 	</body>
 </html>

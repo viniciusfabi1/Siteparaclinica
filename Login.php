@@ -45,7 +45,7 @@
 
 					<ul>
 						<li><a href="index.php">Home</a></li>
-						<li><a href="no-sidebar.php">Cadastro</a></li>
+						<li><a href="cadastro.php">Cadastro</a></li>
 					</ul>
 					
 				</nav>
@@ -82,7 +82,7 @@
 												 </p>	
 							<ul class="style">
 								<li>
-									<form method= "POST" action="conexao.php">
+									<form method= "POST" action="conexao - login.php">
 										<div class="form-group">
 										  <label for="exampleInputEmail1">Usuário</label>
 										  <input type="text" name="usuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF">
