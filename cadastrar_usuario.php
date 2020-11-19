@@ -5,6 +5,10 @@
 	function loginsuccessfully() {
 		setTimeout("window.location ='login.php' ", 3000);
 	}
+    function cadastrosuccessfully() {
+		setTimeout("window.location ='cadastro.php' ", 3000);
+	}
+
 
 	</script>
     <?php 
@@ -20,7 +24,20 @@
     $telefone = $_POST ['telefone'];
 	
 	//banco de dados usuario - idusuario,nome, cpf, rg, datanas, sexo, email, telefone
-					//endereço - idendereco,idusuario, cep, bairro,rua
+                    //endereço - idendereco,idusuario, cep, bairro,rua
+                    
+#codigo para evitar registro duplicado de dados no banco!            
+if(!$conect=mysqli_connect('localhost','root','','santamonica')) die ('erro ao conectar'); 
+#Recolhendo os dados do formulário
+$cpf = mysqli_real_escape_string($conect,$_POST['cpf']);
+$rg = mysqli_real_escape_string($conect,$_POST['rg']);
+# Verificando apenas um campo, no caso o campo CPF.
+$sql = $conect->query("SELECT * FROM usuario WHERE cpf='$cpf'");
+if(mysqli_num_rows($sql) > 0){
+echo "Este usuário já existe";
+echo "<script>cadastrosuccessfully()</script>";
+} else {
+
     $query = "SELECT (codigo_tabela)+1 as codigo from gautoinc where tabela='usuario'";
     $result = mysqli_query($conn, $query);
 
@@ -34,7 +51,7 @@ $idusuario = $row["codigo"];
     
     echo"<script>loginsuccessfully()</script>";
 	echo "Você foi cadastrado com sucesso!";
-   
+ }
     ?>
 
  
